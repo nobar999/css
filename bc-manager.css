@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: Century Gothic, sans-serif;
+    font-size: 12px;
+    background-color: #EEE;
+    background-color: #FFF;
+}
+h1,h2,h3,h4,h5,p { margin: 0; padding: 5px 0; }
+body.no-scroll { overflow: hidden; }
+a {
+    color: #660066;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+.container:before {
+    content: '';
+    display: block;
+}
+.container:after { 
+    content: '';
+    display: block;
+    clear: both;
+}
+.container-full { width: 100%; }
+
+.manager-container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    box-sizing: inherit;
+}
+.manager-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 160px;   /* 40px; */
+    height: 100%;
+    transition: 0.5s;
+    background-color: #F7F7F7;
+    border-right: 1px solid #EEE;
+    z-index: 9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbar-none;
+}
+.manager-nav::-webkit-scrollbar { width: 0 !important; }
+.manager-nav .mnu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 40px;
+    color: #555;
+}
+.manager-nav .mnu-items{ 
+    /*display: none;*/
+    margin-top: 40px;
+}
+.manager-nav a {
+    display: block;
+    padding: 10px 5px 10px 10px;
+    color: #555;
+    font-size: 12px;
+    border-top: 1px solid #EEE;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.manager-nav a.sub-nav {
+    padding-left: 25px;
+    font-size: 11px;
+}
+.manager-title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #FFF;
+    background-color: #C00;
+    overflow: hidden;
+    z-index: 5;
+}
+.manager-content {
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.box-tip {
+    margin: 0;
+    padding: 10px;
+    background-color: #FFF6BF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.script-box {
+    font-family: Century Gothic, sans-serif;
+}
+
+/* FORM */
+.form-manager {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+.form-manager div.cell { margin: 4px 0;}
+.form-manager input, .form-manager textarea, .form-manager select {
+    width: 300px;
+    padding: 4px 8px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 12px;
+    color: #333;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.form-manager select {
+    padding: 3px 8px;
+}
+.form-manager input[type='checkbox'], .form-manager input[type='file'] {
+    width: auto;
+    border: none;
+}
+.form-manager input[type='submit'], .form-manager input[type='reset'] {
+    width: auto;
+    background-color: #F7F7F7;
+    border: 1px solid #D7D7D7;
+}
+.form-manager textarea {
+    height: 80px;
+}
+.form-manager textarea.no-resize { resize: none; }
+.form-manager textarea.code {
+    width: 100%;
+    padding: 10px 5px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.form-manager .ch-item {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #FFF6BF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.image-preview img {
+    height: auto;
+    max-width: 300px;
+    max-height: 600px;
+    border: 1px solid #D7D7D7;
+}
+
+.table-form {}
+.table-form td {
+    padding: 2px 4px;
+    vertical-align: top;
+}
+.table-form td.widecell {
+    width: 1000px;
+}
+
+.club_participants {
+    display: inline-block;
+    width: 150px;
+}
+
+/* TABLE DATA */
+.table-manager {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+.table-manager th {
+    padding: 4px 8px;
+    border: 1px solid #999;
+    background-color: #F7F7F7;
+}
+.table-manager td {
+    padding: 4px 8px;
+    border: 1px solid #999;
+}
+.table-manager .mg-action {
+    color: #660066;
+    text-decoration: none;
+}
+
+.grid-logo {
+    margin: 0;
+    padding: 0;
+}
+.grid-logo:before {
+    content: '';
+    display: block;
+}
+.grid-logo:after { 
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid-logo .grid-item {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 5px;
+    border: 1px solid #D7D7D7;
+}
+.grid-logo .grid-item-btn {
+    border: 1px solid #C00;
+}
+.grid-logo .grid-item .item-logo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.grid-logo .grid-item .item-detail {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    line-height: 12px;
+    background-color: rgba(255,255,255, 0.95);
+}
+.grid-logo .grid-item .default-logo {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    filter: alpha(opacity=10); 
+    opacity: .1;
+}
+
+
+.grid-upload {
+    margin: 0;
+    padding: 0;
+}
+.grid-upload:before {
+    content: '';
+    display: block;
+}
+.grid-upload:after { 
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid-upload .grid-img {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 5px;
+    border: 1px solid #D7D7D7;
+}
+.grid-upload .grid-img img {
+    max-width: 200px;
+    max-height: 200px;
+}
+.grid-upload .grid-img-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    line-height: 12px;
+    /*background-color: rgba(255,255,255, 0.5);*/
+}
+
+.box-wrapper {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #FFF6BF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* PAGINATION */
+.manager-pages {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.manager-pages > li {
+    display: inline-block;
+}
+.manager-pages > li a {
+    display: block;
+    padding: 4px 8px;
+    font-size: 10px;
+    border: 1px solid #C00;
+}
+.manager-pages > li.page-active a {
+    color: #FFF;
+    background-color: #C00;
+}
